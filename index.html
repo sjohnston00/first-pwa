@@ -32,13 +32,19 @@
       </nav>
       <div class="container"></div>
 
-      <form name="contact-me" method="POST" data-netlify="true">
+      <form
+        name="contact-me"
+        method="POST"
+        data-netlify-recaptcha="true"
+        data-netlify="true"
+      >
         <label for="name">Full Name</label>
         <input type="text" name="name" id="name" required />
         <label for="email">Email</label>
         <input type="email" name="email" id="email" required />
         <label for="message">Message</label>
         <textarea name="message" id="message" required></textarea>
+        <div data-netlify-recaptcha="true"></div>
         <button type="submit">Send Message</button>
       </form>
     </main>
